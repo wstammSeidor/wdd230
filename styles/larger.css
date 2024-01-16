@@ -118,4 +118,22 @@ section h2 {
 }
 footer {
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-footer{
+    margin-left:0.5rem;
+    margin-right: 0.5rem;
+    vertical-align: bottom;
+}
+#lastModified{
+    font-size: 0.8rem;
+    color: white;
+    background-color: #007BFF;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem;
 }

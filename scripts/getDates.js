@@ -2,11 +2,7 @@
 // document.querySelector('#currentYear').textContent = new Date().getFullYear();
 
     let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-    if (day < 10)
-        day = '0' + day;
-    if (month < 10)
-        month = '0' + month;
-    document.querySelector('#currentYear').textContent = year + "/" + month + "/" + day;
+    document.querySelector('#currentYear').textContent =  date.getFullYear();
+
+    let oLastModif = new Date(document.lastModified);
+    document.querySelector('#lastModified').textContent = oLastModif;
