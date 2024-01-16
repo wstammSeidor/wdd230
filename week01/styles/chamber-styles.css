@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 20vh auto 1fr 1fr; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: grid;
+    grid-area: header;
+    background-image: url('/images/camara-comercio.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+nav{
+    background-color:  #2f7dcf;
+
+}
+nav ul {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
