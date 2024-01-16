@@ -5,11 +5,13 @@ body {
         "nav"
         "main"
         "footer";
-    grid-template-rows: 20vh auto 1fr 1fr; 
+    grid-template-rows: 30vh auto 1fr 5vh; 
     height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 header {
@@ -30,4 +32,13 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(163, 206, 255);
+}
+
+footer{
+    background-color: #2f7dcf;
 }
