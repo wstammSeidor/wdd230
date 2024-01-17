@@ -115,6 +115,7 @@ section h2 {
     padding: 0;
     background-color:  #007BFF;
     color: white;
+    
 }
 footer {
     grid-area: footer;
