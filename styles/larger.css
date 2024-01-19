@@ -33,9 +33,19 @@ header span {
     margin-left: 10px; 
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+
 nav {
     grid-area: nav;
-    background-color: #007BFF;
+    background-color:#2b2e3b;
 }
 
 nav ul {
@@ -48,16 +58,15 @@ nav a {
     text-align: center; 
     width: 100%; 
     color: white;
-
 }
 
 nav li:hover {
 
-    background-color: rgb(34, 13, 221);
+    background-color: #2b2e3b;
 }
 
 nav .active {
-    background-color:rgb(6, 6, 78);
+    background-color:rgb(44, 44, 177);
 }
 
 
@@ -103,6 +112,8 @@ main h2 {
     box-sizing: border-box;
 }
 
+
+
 section{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
@@ -113,16 +124,22 @@ section h2 {
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
-    background-color:  #007BFF;
+    background-color:  #2b2e3b;
     color: white;
     
 }
+
+/* section a {
+    text-decoration: none;
+} */
 footer {
+    color: white;
     grid-area: footer;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #012d5c;
 }
 
 .img-footer{
@@ -133,7 +150,7 @@ footer {
 #lastModified{
     font-size: 0.8rem;
     color: white;
-    background-color: #007BFF;
+    background-color: #2b2e3b;
     padding: 0.5rem;
     border-radius: 5px;
     margin: 0.5rem;

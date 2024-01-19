@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 230 - Web Frontend Development">
-    <link rel="stylesheet" href="./styles/larger.css">
-    <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
     <meta name="author" content="Walter Stamm">
-    <link rel="icon" href="favicon.ico" type="flag" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +21,29 @@
 </head>
 <body>
     <header>
+            <div id="mode">
+                🕶️
+            </div>
             <img src="images/profile-large.jpg" alt="Walter Stamm">
             <span>Walter Stamm</span>
     </header>
+    
     <nav>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>   
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
+        <button id="menu"></button>
+	    <ul class="navigation">
+	    	<li><a href="#" id="home" title="Home">Home</a></li>
+	    	<li><a href="#" id="about-us" title="About Us">Chamber</a></li>
+	    	<li><a href="#" id="service" title="Service">Site Plan</a></li>
+	    	<li><a href="#" id="history" title="History">Form</a></li>
+	    </ul>
     </nav>
     <main>
         <h2 class="subtitile">WDD 230: Web Frontend Development</h2>
         <section class="section1">
             <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="#">Activity 1</a></li>
-                <li><a href="#">Activity 2</a></li>
+            <ul >
+                <li><a class="a-section" href="#">Activity 1</a></li>
+                <li><a  class="a-section"href="#">Activity 2</a></li>
             </ul>
         </section>
         <section class="section2">
@@ -48,7 +53,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> <img class="img-footer" src="images/soccer-ball.png">Walter Stamm <img class="img-footer"  src="images/soccer-ball.png"> Buenos Aires, Argentina <img src="images/argentina.png" class="img-footer" alt="Argentina"> </p>
+        <p>&copy; <span id="currentYear"></span> <img class="img-footer" alt="soccer-ball" src="images/futbol-player.png">Walter Stamm <img alt="soccer-ball" class="img-footer"  src="images/futbol-player.png"> Buenos Aires, Argentina <img alt="Argentina" src="images/argentina.png" class="img-footer" alt="Argentina"> </p>
         <p  id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
