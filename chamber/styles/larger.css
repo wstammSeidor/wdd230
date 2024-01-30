@@ -141,5 +141,12 @@ main {
 .container-events{
     color: #e1e6ec;
     background-color:#003366;
-    margin: 3rem;
+    
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
