@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber Site">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
     <meta name="author" content="Walter Stamm">
@@ -19,6 +20,60 @@
     <meta property="og:url" content="https://wstammseidor.github.io/wdd230/">
 </head>
 <body>
-    
+    <header>
+      <img src="images/chamber-logo.png" alt="chamber logo">
+      <button>
+        Join Now
+      </button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+	    <ul class="navigation">
+	    	<li><a href="#" id="home" title="Home">Home</a></li>
+	    	<li><a href="#" id="about-us" title="About Us">Chamber</a></li>
+	    	<li><a href="#" id="service" title="Service">Site Plan</a></li>
+	    	<li><a href="#" id="history" title="History">Form</a></li>
+	    </ul>
+    </nav>
+    <main>
+        <section class="spotlights">
+            <div class="spotlight">
+              <img src="images/mcdonalds-logo.jpg" alt="Company 1">
+              <h3>Mc Donalds</h3>
+              <p>Description of Company 1...</p>
+              <a href="#">Learn More</a>
+            </div>
+        
+            <div class="spotlight">
+              <img src="images/ibm-logo.jpg" alt="Company 2">
+              <h3>IBM</h3>
+              <p>Description of Company 2...</p>
+              <a href="#">Learn More</a>
+            </div>
+        
+            <div class="spotlight">
+              <img src="images/ml-logo.png" alt="Company 3">
+              <h3>Mercado Libre</h3>
+              <p>Description of Company 3...</p>
+              <a href="#">Learn More</a>
+            </div>
+          </section>
+          <div>
+            <h2 class="h2-main">Upcoming Events</h2>
+
+            <div class="container-events">
+                <h3>March 10, 2024</h3>
+                <p>Annual Dinner</p>
+            </div>
+            <div class="container-events">
+                <h3>March 10, 2024</h3>
+                <p>Annual Dinner</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Walter Stamm</p>
+    </footer>
 </body>
 </html>
