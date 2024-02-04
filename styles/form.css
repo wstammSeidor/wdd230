@@ -1,0 +1,58 @@
+:root {
+    --form-spacing: 15px;
+    --form-font-size: 16px;
+    --form-border-radius: 5px;
+    --color-button: #3852e0;
+    --color-hover-button: #050b2e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: var(--form-border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    gap: var(--form-spacing);
+}
+
+label {
+    font-size: var(--form-font-size);
+    color: #333;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: var(--form-font-size);
+    border: 1px solid #ddd;
+    border-radius: var(--form-border-radius);
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--color-button);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: var(--form-font-size);
+    border: none;
+    border-radius: var(--form-border-radius);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-hover-button);
+}
+
