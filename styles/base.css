@@ -19,6 +19,9 @@
     }
 
 
+    
+
+
 
     #menu {
     	font-size: 1.5rem;
@@ -95,10 +98,38 @@
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50px 1fr 1fr ;
+        grid-template-rows: auto 50px 1fr 1fr auto;
     }
+
+
+    .hero {
+        grid-area: 1 / 1/ 2 / 7;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .hero img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .hero-h1{
+        grid-area: 1 / 1/ 2 / 7;
+        color: white;
+        display: inline-block;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
     .section1{
-        grid-area: 2 / 1 / 3 / 5;
+        grid-area: 3 / 1 / 4 / 5;
         background-color: rgb(255, 255, 255);
         border: 1px solid rgb(0, 0, 0);
         margin: 1rem;
@@ -106,7 +137,7 @@
     }
     
     .section2{
-        grid-area: 3 / 1 / 4 / 5;
+        grid-area: 4 / 1 / 5 / 5;
         background-color: rgb(255, 255, 255);
         border: 1px solid rgb(0, 0, 0);
         margin: 1rem;
@@ -116,6 +147,14 @@
     section{
         font-size: 1.2rem;
         text-align: center;
+    }
+
+    .maps{
+        grid-area: 6 / 1 / 6 / 5;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        box-sizing: border-box;
     }
 
     footer{
