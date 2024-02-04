@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber Site">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="author" content="Walter Stamm">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Chamber Site</title>
+    <meta property="og:title" content="Chamber Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://periodicoviaje.com/wp-content/uploads/2020/10/Argentina-Buenos-Aires.jpg">
+    <meta property="og:url" content="https://wstammseidor.github.io/wdd230/">
+</head>
+<body>
+    <header>
+      <img src="images/chamber-logo.png" alt="chamber logo">
+      <button>
+        Join Now
+      </button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+	    <ul class="navigation">
+	    	<li><a href="#" id="home" title="Home">Home</a></li>
+	    	<li><a href="#" id="about-us" title="About Us">Chamber</a></li>
+	    	<li><a href="#" id="service" title="Service">Site Plan</a></li>
+	    	<li><a href="#" id="history" title="History">Form</a></li>
+	    </ul>
+    </nav>
+    <main>
+      <div class="sidebar-container">
+        <h2>Upcoming Events</h2>
+        <div class="container-events">
+          <h3>March 10, 2024</h3>
+          <p>Annual Dinner</p>
+        </div>
+        <div class="container-events">
+          <h3>March 10, 2024</h3>
+          <p>Annual Dinner</p>
+        </div>
+        <div class="container-events">
+          <h3>March 10, 2024</h3>
+          <p>Annual Dinner</p>
+        </div>
+
+        <h2 >Statistics of Our Members</h2>
+        <div class="static-container">
+          <picture>
+            <source srcset="images/chart-small.webp" media="(max-width: 500px)">
+            <source srcset="images/chart-medium.webp" media="(max-width: 1000px)">
+            <img src="images/chart-large.webp" loading="lazy" alt="chart statics" width="1200" height="auto">
+          </picture>
+        </div>
+
+        <h2>Average of new customers</h2>
+        <div class="static-container">
+          <picture>
+            <source srcset="images/circle-progres-small.webp" media="(max-width: 500px)">
+            <source srcset="images/circle-progres-large.webp" media="(max-width: 1000px)">
+            <img src="images/circle-progres-large.webp" loading="lazy" alt="average" width="1200" height="auto">
+          </picture>
+        </div>
+        </div>
+        
+
+      </div>
+
+      <div class="main-container-new">
+        <!-- <h2 >Statistics of Our Members</h2> -->
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-1-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-1-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-1-large.webp" loading="lazy" alt="img 1" width="1200" height="auto">
+          </picture>
+        </div>
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-2-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-2-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-2-large.webp" loading="lazy" alt="img 2" width="1200" height="auto">
+          </picture>
+        </div>
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-3-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-3-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-3-large.webp" loading="lazy" alt="img 3" width="1200" height="auto">
+          </picture>
+        </div>
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-4-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-4-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-4-large.webp" loading="lazy" alt="img 4" width="1200" height="auto">
+          </picture>
+        </div>
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-5-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-5-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-5-large.webp" loading="lazy" alt="img 5" width="1200" height="auto">
+          </picture>
+        </div>
+        <div class="main-img-container">
+          <picture>
+            <source srcset="images/main-6-small.webp" media="(max-width: 500px)">
+            <source srcset="images/main-6-medium.webp" media="(max-width: 1000px)">
+            <img src="images/main-6-large.webp" loading="lazy" alt="img 6" width="1200" height="auto">
+          </picture>
+        </div>
+
+      </div>
+    </main>
+    <footer id="footer">
+      
+        <p>&copy; <span id="currentYear"></span> Walter Stamm  Buenos Aires, Argentina </p>
+        <p  id="lastModified"></p>
+    </footer>
+    <script src="scripts/functions.js"></script>
+</body>
+</html>
