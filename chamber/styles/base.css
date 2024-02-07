@@ -27,7 +27,7 @@
         grid-template-rows: auto;
     }
 
-    main{
+    .main-discover {
         grid-area: main;
         display: grid;
         grid-template-rows:  2fr;
@@ -148,4 +148,53 @@
     	content: "📍 ";
     }
 
+
+
+
+
+
+    /*--------------------------------------------------- Styles for join.html---------------------------------------------------------------*/
+
+
+.main-join {
+    grid-area: main;
+    display: grid;
+    grid-template-rows:  1fr;
+    grid-template-columns: 10% 80% 10%;
 }
+
+.container-form  {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 1rem;
+}
+
+.container-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container-form input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+}
+

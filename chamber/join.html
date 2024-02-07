@@ -35,47 +35,42 @@
 	    	<li><a href="#" id="history" title="History">Form</a></li>
 	    </ul>
     </nav>
-    <main class="main-discover">
-        <section class="spotlights">
-            <div class="spotlight">
-              <img src="images/McDonalds-logo.jpg" alt="Company 1">
-              <h3>Mc Donalds</h3>
-              <p>Description of Company 1...</p>
-              <a href="#">Learn More</a>
-            </div>
-        
-            <div class="spotlight">
-              <img src="images/ibm-logo.jpg" alt="Company 2">
-              <h3>IBM</h3>
-              <p>Description of Company 2...</p>
-              <a href="#">Learn More</a>
-            </div>
-        
-            <div class="spotlight">
-              <img src="images/ml-logo.png" alt="Company 3">
-              <h3>Mercado Libre</h3>
-              <p>Description of Company 3...</p>
-              <a href="#">Learn More</a>
-            </div>
-          </section>
-          <div class="main-container">
-            <div>
-                <h1 class="h2-main">Upcoming Events</h1>
+    <main class="main-join">
+      <form action="thankyou.html" method="get" class="container-form">
 
-                <div class="container-events">
-                    <h3>March 10, 2024</h3>
-                    <p>Annual Dinner</p>
-                </div>
-                
-            </div>
-            <div class="weather-container">
-                <div class="weather-box">
-                  <h2 class="weather-heading">Weather</h2>
-                  <p class="temperature">25°C</p>
-                  <p class="conditions">Partly Cloudy</p>
-                </div>
-            </div>
-        </div>
+        <label for="firstName">Applicant's First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Applicant's Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="title">Title/Position:</label>
+        <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" title="Only alpha characters, hyphens, and spaces allowed (minimum 7 characters)">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+        <label for="phone">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="orgName">Business/Organization's Name:</label>
+        <input type="text" id="orgName" name="orgName" required>
+
+        <label for="membershipLevel">Membership Level:</label>
+        <select id="membershipLevel" name="membershipLevel">
+            <option value="NP">NP Membership (No Fee)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+        </select>
+
+        <label for="description">Business/Organization's Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <input type="submit" value="Submit Form">
+    </form>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Walter Stamm  Buenos Aires, Argentina </p>
