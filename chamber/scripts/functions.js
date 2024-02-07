@@ -62,6 +62,10 @@ try {
     }
     
 
+     const  currentTimestamp = new Date().toISOString();
+     // Set the value of the hidden input field to the current timestamp
+     document.getElementById("timestamp").value = currentTimestamp;
+
 
 
   } catch (error) {
