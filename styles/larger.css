@@ -213,3 +213,22 @@ footer {
     border-radius: 5px;
     margin: 0.5rem;
 }
+
+/* -------------------------STYLES FOR LEARNING ACTIVITIES ------------------------------------*/
+.week-links {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .week-links li {
+    display: inline;
+  }
+  
+  .week-links li:not(:last-child) {
+    margin-right: 5px; 
+  }
+  
+  .week-links li span {
+    color: #999; 
+  }

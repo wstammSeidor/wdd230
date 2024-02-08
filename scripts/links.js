@@ -24,15 +24,24 @@ async function getLinks() {
     
     weeks.forEach(week => {
       const weekItem = document.createElement('li');
-      weekItem.textContent = week.week;
+      weekItem.textContent = `${week.week}: `;
   
       const linksList = document.createElement('ul');
-      week.links.forEach(link => {
+      linksList.classList.add('week-links'); // Añadir una clase para estilizar
+  
+      week.links.forEach((link, index) => {
         const linkItem = document.createElement('li');
         const linkAnchor = document.createElement('a');
         linkAnchor.href = `${baseURL}${link.url}`;
         linkAnchor.textContent = link.title;
         linkItem.appendChild(linkAnchor);
+        
+        if (index < week.links.length - 1) {
+          const separator = document.createElement('span');
+          separator.textContent = ' | ';
+          linkItem.appendChild(separator);
+        }
+  
         linksList.appendChild(linkItem);
       });
   
@@ -40,4 +49,5 @@ async function getLinks() {
       activityList.appendChild(weekItem);
     });
   }
+  
   
