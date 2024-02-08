@@ -267,5 +267,11 @@ input[type="submit"]:hover {
 }
 
 
-}
+/* ---------------------------------------------------------- Styles for directory.html------------------------------------------ */
 
+.main-directory {
+  grid-area: main;
+  display: grid;
+  grid-template-rows:  1fr;
+  grid-template-columns: 10% 80% 10%;
+}
