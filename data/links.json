@@ -4,7 +4,7 @@
         "links": [
             {
               "url": "week04/tablebuild.html",
-              "title": "HTML Tables for Data Presentation"
+              "title": "HTML Tables"
             },
             {
               "url": "images/w3school.png",
@@ -12,7 +12,7 @@
             },
             {
               "url": "https://codepen.io/walterstamm/pen/oNVMrPK",
-              "title": "CSS Pseudo-Classes"
+              "title": "Pseudo-Classes"
             }
           ]
         },
@@ -25,7 +25,7 @@
             },
             {
               "url": "new-ward-members.json",
-              "title": "Json new-ward-members.json"
+              "title": "Json"
             },
             {
               "url": "https://wstammseidor.github.io/wdd230/week05/prophets",
@@ -33,7 +33,7 @@
             },
             {
                 "url": "week05/weather.html",
-                "title": "Consuming a Weather API"
+                "title": "Weather API"
             }
           ]
         }
