@@ -148,6 +148,33 @@ section h2 {
     
 }
 
+.container-weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+
+}
+
+#weather-icon {
+    width: 80px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 80px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+
+
+#current-temp {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p-weather {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+
 .visits{
     margin: 1rem;
     display: inline-block;

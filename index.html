@@ -51,19 +51,16 @@
         </div>
         <section class="section1">
             <h2>Learning Activities</h2>
-            <ul >
-                <li><a class="a-section" href="week04/tablebuild.html">HTML Tables for Data Presentation(week04)</a></li>
-                <li><a class="a-section" href="images/w3school.png">CSS Combinators(week04)</a></li>
-                <li><a class="a-section" href="https://codepen.io/walterstamm/pen/oNVMrPK">CSS Pseudo-Classes(week04)</a></li>
-                <li><a class="a-section" href="https://codepen.io/walterstamm/pen/jOJpBXo">CodePen(week05)</a></li>
-                <li><a class="a-section" href="new-ward-members.json">Json new-ward-members.json(week05)</a></li>
-                <li><a class="a-section" href="https://wstammseidor.github.io/wdd230/week05/prophets">Prophets(week05)</a></li>
-                <li><a class="a-section" href="week05/weather.html">Consuming a Weather API(week05)</a></li>
+            <ul id="activity-list">
             </ul>
         </section>
+        
         <section class="section2">
-            <h2>Information</h2>
-            <p>Weather: Placeholder</p>
+            <div class="container-weather">
+            <img id="weather-icon" src="images/transparent.png" alt="weather">  <span id="current-temp"></span>°F - <p class="p-weather"></p>
+            
+              
+            </div>
             <p class="title-visits">Number of visits:</p><span class="visits"></span>
         </section>
         <div class="maps">
@@ -76,5 +73,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/numberOfVisits.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>

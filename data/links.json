@@ -1,0 +1,42 @@
+{
+    "weeks":[{
+        "week": "Week 4",
+        "links": [
+            {
+              "url": "week04/tablebuild.html",
+              "title": "HTML Tables for Data Presentation"
+            },
+            {
+              "url": "images/w3school.png",
+              "title": "CSS Combinators"
+            },
+            {
+              "url": "https://codepen.io/walterstamm/pen/oNVMrPK",
+              "title": "CSS Pseudo-Classes"
+            }
+          ]
+        },
+        {
+        "week": "Week 5",
+        "links": [
+            {
+              "url": "https://codepen.io/walterstamm/pen/jOJpBXo",
+              "title": "CodePen"
+            },
+            {
+              "url": "new-ward-members.json",
+              "title": "Json new-ward-members.json"
+            },
+            {
+              "url": "https://wstammseidor.github.io/wdd230/week05/prophets",
+              "title": "Prophets"
+            },
+            {
+                "url": "week05/weather.html",
+                "title": "Consuming a Weather API"
+            }
+          ]
+        }
+
+    ]
+}
