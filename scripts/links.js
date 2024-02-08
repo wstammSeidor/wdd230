@@ -36,13 +36,13 @@ async function getLinks() {
       week.links.forEach((link, index) => {
         const linkItem = document.createElement('li');
         const linkAnchor = document.createElement('a');
-        if (link.url === baseURL) {
-            linkAnchor.href = `${baseURL}${link.url}`;
+        if (link.url.startsWith('https')) {
+            
+            linkAnchor.href = `${link.url}`;
         }
         else{
 
-            linkAnchor.href = `${link.url}`;
-
+            linkAnchor.href = `${baseURL}${link.url}`;
         }
         linkAnchor.textContent = link.title;
         linkItem.appendChild(linkAnchor);
