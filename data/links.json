@@ -1,6 +1,36 @@
 {
     "weeks":
     [
+      {
+        "week": "Week 1",
+        "links": [
+            {
+              "url": "week01/holygrail.html",
+              "title": "CSS Layout"
+            },
+            {
+              "url": "week01/media-query.html",
+              "title": "Media Queries"
+            }
+          ]
+        },
+      {
+        "week": "Week 2",
+        "links": [
+            {
+              "url": "week02/design.html",
+              "title": "Web Design"
+            },
+            {
+              "url": "https://codepen.io/walterstamm/pen/abMJmdm",
+              "title": "Hamburger"
+            },
+            {
+              "url": "week02/bom.html",
+              "title": "DOM Manipulation"
+            }
+          ]
+        },
         {
         "week": "Week 3",
         "links": [
