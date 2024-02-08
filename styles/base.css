@@ -51,7 +51,7 @@
     }
     .navigation li a {
     	display: block;
-    	padding: 1rem;
+    	/* padding: 1rem; */
     	text-align: center;
     	text-decoration: none;
     	color: #fff;
@@ -160,5 +160,13 @@
     footer{
         grid-area: footer;
         text-align: center;
+    }
+
+    /*-------------------------- Styles for Learning actities---------------------------------------- */
+
+    .section1 li{
+        list-style: none;
+        margin: 0;
+        font-size: 1rem;
     }
 }

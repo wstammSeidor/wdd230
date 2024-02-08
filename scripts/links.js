@@ -24,10 +24,14 @@ async function getLinks() {
     
     weeks.forEach(week => {
       const weekItem = document.createElement('li');
-      weekItem.textContent = `${week.week}: `;
+      weekItem.classList.add('week-item'); // Añadir clase para separación entre semanas
+  
+      const weekTitle = document.createElement('span');
+      weekTitle.textContent = `${week.week}: `;
+      weekItem.appendChild(weekTitle);
   
       const linksList = document.createElement('ul');
-      linksList.classList.add('week-links'); // Añadir una clase para estilizar
+      linksList.classList.add('week-links'); // Añadir clase para estilizar
   
       week.links.forEach((link, index) => {
         const linkItem = document.createElement('li');
@@ -49,5 +53,4 @@ async function getLinks() {
       activityList.appendChild(weekItem);
     });
   }
-  
   

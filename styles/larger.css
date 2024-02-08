@@ -216,9 +216,9 @@ footer {
 
 /* -------------------------STYLES FOR LEARNING ACTIVITIES ------------------------------------*/
 .week-links {
-    display: inline;
     margin: 0;
     padding: 0;
+    display: inline; /
   }
   
   .week-links li {
@@ -232,3 +232,9 @@ footer {
   .week-links li span {
     color: #999; 
   }
+  
+  .week-item {
+    margin-bottom: 10px;
+    display: block; 
+  }
+  
