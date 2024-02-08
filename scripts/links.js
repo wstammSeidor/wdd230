@@ -24,19 +24,26 @@ async function getLinks() {
     
     weeks.forEach(week => {
       const weekItem = document.createElement('li');
-      weekItem.classList.add('week-item'); // Añadir clase para separación entre semanas
+      weekItem.classList.add('week-item'); 
   
       const weekTitle = document.createElement('span');
       weekTitle.textContent = `${week.week}: `;
       weekItem.appendChild(weekTitle);
   
       const linksList = document.createElement('ul');
-      linksList.classList.add('week-links'); // Añadir clase para estilizar
+      linksList.classList.add('week-links'); 
   
       week.links.forEach((link, index) => {
         const linkItem = document.createElement('li');
         const linkAnchor = document.createElement('a');
-        linkAnchor.href = `${baseURL}${link.url}`;
+        if (link.url === baseURL) {
+            linkAnchor.href = `${baseURL}${link.url}`;
+        }
+        else{
+
+            linkAnchor.href = `${link.url}`;
+
+        }
         linkAnchor.textContent = link.title;
         linkItem.appendChild(linkAnchor);
         
