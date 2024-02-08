@@ -14,7 +14,7 @@ getCompaniesData();
 
 const displayCompanies = (members) => {
 
-    console.log(members)
+    // console.log(members)
     members.forEach((members) => {
       const card = document.createElement('section');
       const fullName = document.createElement('h2');
@@ -23,6 +23,7 @@ const displayCompanies = (members) => {
       fullName.textContent = `${members.name}`;
 
       portrait.setAttribute('src', `${baseURL}${members.image}`);
+      console.log(`${baseURL}${members.image}`)
       portrait.setAttribute('alt', `${members.name} ${members.lastname}`);
       portrait.setAttribute('loading', 'lazy');
       portrait.setAttribute('width', '200'); 
