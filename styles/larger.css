@@ -118,6 +118,10 @@ main h2 {
     margin: 1rem;
     box-sizing: border-box;
 }
+.section1 ul{
+    list-style: none;
+    padding: 0;
+  }
 .section1 li{
     list-style: none;
 
@@ -131,11 +135,22 @@ main h2 {
     box-sizing: border-box;
 }
 
+.title-visits, .visits{
+    
+    font-size: 1.3rem;
+}
+.container-visits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
 
 
 section{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0%;
 }
 
 section h2 {
@@ -157,8 +172,8 @@ section h2 {
 }
 
 #weather-icon {
-    width: 80px; /* Ajusta el tamaño del icono según sea necesario */
-    height: 80px; /* Ajusta el tamaño del icono según sea necesario */
+    width: 80px; 
+    height: 80px; 
 }
 
 
@@ -218,11 +233,12 @@ footer {
 .week-links {
     margin: 0;
     padding: 0;
-    display: inline; /
+    display: inline; 
   }
   
   .week-links li {
     display: inline;
+    font-size: 1.2rem;
   }
   
   .week-links li:not(:last-child) {
@@ -237,4 +253,10 @@ footer {
     margin-bottom: 10px;
     display: block; 
   }
+
+  
+
+
+
+
   
