@@ -7,23 +7,26 @@ const cards = document.querySelector('#cards');
 async function getCompaniesData() {
   const response = await fetch(linksURL);
   const data = await response.json();
-  displayCompanies(data);
+  displayCompanies(data.members);
 }
 
 getCompaniesData();
 
 const displayCompanies = (members) => {
+
+    console.log(members)
     members.forEach((members) => {
       const card = document.createElement('section');
       const fullName = document.createElement('h2');
       const portrait = document.createElement('img');
         
       fullName.textContent = `${members.name}`;
-      portrait.setAttribute('src', members.imageurl);
+
+      portrait.setAttribute('src', `${baseURL}${members.image}`);
       portrait.setAttribute('alt', `${members.name} ${members.lastname}`);
       portrait.setAttribute('loading', 'lazy');
-      portrait.setAttribute('width', '200'); // Adjust width as needed
-      portrait.setAttribute('height', '200'); // Adjust height as needed
+      portrait.setAttribute('width', '200'); 
+      portrait.setAttribute('height', '200'); 
   
       card.appendChild(fullName);
       card.appendChild(portrait);
