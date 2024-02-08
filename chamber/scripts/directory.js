@@ -4,24 +4,23 @@ const linksURL = `${baseURL}chamber/data/members.json`;
 
 const cards = document.querySelector('#cards');
 
-async function getProphetData() {
-  const response = await fetch(url);
+async function getCompaniesData() {
+  const response = await fetch(linksURL);
   const data = await response.json();
-//   console.table(data.prophets); 
-  displayProphets(data.prophets);
+  displayCompanies(data);
 }
 
-getProphetData();
+getCompaniesData();
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
+const displayCompanies = (members) => {
+    members.forEach((members) => {
       const card = document.createElement('section');
       const fullName = document.createElement('h2');
       const portrait = document.createElement('img');
-  
-      fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-      portrait.setAttribute('src', prophet.imageurl);
-      portrait.setAttribute('alt', `${prophet.name} ${prophet.lastname}`);
+        
+      fullName.textContent = `${members.name}`;
+      portrait.setAttribute('src', members.imageurl);
+      portrait.setAttribute('alt', `${members.name} ${members.lastname}`);
       portrait.setAttribute('loading', 'lazy');
       portrait.setAttribute('width', '200'); // Adjust width as needed
       portrait.setAttribute('height', '200'); // Adjust height as needed
