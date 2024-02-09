@@ -45,7 +45,7 @@ header button {
 nav {
     grid-area: nav;
     background-color:#003366;
-    background-image: url('../images/hero-image.jpg');
+    background-image: url('../images/hero-image.webp');
     background-size: cover; 
     background-position: center; 
     background-color: #003366;  
@@ -82,6 +82,11 @@ nav .active {
     background-color:rgb(44, 44, 177);
 }
 
+
+
+#menu{
+  display: none;
+}
 
 .main-discover {
   grid-area: main;
@@ -332,10 +337,6 @@ section {
 	display: none; 
 }
 
-/* .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
-} */
 
 .list section:nth-child(even) {
 	background-color: #5a9cdd;
