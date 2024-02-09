@@ -226,6 +226,32 @@ footer{
     padding: 1rem;
 
 }
+/* ---------------------------------------------------------- Styles for thankyou.html------------------------------------------ */
+
+
+.thankyou-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.thankyou-main h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.thankyou-main p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+
+
+
 
 
 
