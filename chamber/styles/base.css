@@ -196,5 +196,25 @@ input[type="submit"]:hover {
 }
 
 
+
+    /*--------------------------------------------------- Styles for directory.html---------------------------------------------------------------*/
+
+
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .list section{
+        background-color: #eee;
+        border: 1px solid #bbb;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
 }
 

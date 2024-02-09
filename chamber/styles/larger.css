@@ -269,9 +269,75 @@ input[type="submit"]:hover {
 
 /* ---------------------------------------------------------- Styles for directory.html------------------------------------------ */
 
-.main-directory {
-  grid-area: main;
+.directory-grid {
   display: grid;
-  grid-template-rows:  1fr;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+
+
+section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directory-grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.directory-grid section {
+	text-align: center;
+}
+
+
+.menu-directory {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #1663af;
+	text-align: center;
+}
+
+.menu-directory button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
+
+/* .list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+} */
+
+.list section:nth-child(even) {
+	background-color: #5a9cdd;
 }
