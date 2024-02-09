@@ -7,7 +7,7 @@
             "nav"
             "main"
             "footer";
-        grid-template-rows: auto 0.7fr 1fr 1fr;
+        grid-template-rows: auto 0.9fr 1fr 1fr;
         height: 100vh;
         margin: 0;
         padding: 0;
