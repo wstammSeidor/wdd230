@@ -1,4 +1,4 @@
-fetch('https://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires&appid=TU_API_KEY&units=metric')
+fetch('https://api.openweathermap.org/data/2.5/weather?q=Buenos+Aires&appid=51f5f50ac3e1ccb583ec0b54ef002e56&units=metric')
 .then(response => response.json())
 .then(data => {
     const currentTemperature = data.main.temp;
