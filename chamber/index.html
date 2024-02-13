@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <title>Chamber Site</title>
+    <title>Chamber of Commerce</title>
     <meta property="og:title" content="Chamber Site">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://periodicoviaje.com/wp-content/uploads/2020/10/Argentina-Buenos-Aires.jpg">
@@ -22,21 +22,42 @@
 <body>
     <header>
       <img src="images/chamber-logo.webp" alt="chamber logo">
-      <button>
-        Join Now
-      </button>
+      <a href="join.html">
+        <button>
+          Join Now
+        </button>
+      </a>
     </header>
     <nav>
-        <button id="menu"></button>
+        <button id="menu" ></button>
 	    <ul class="navigation">
-	    	<li><a href="#" id="home" title="Home">Home</a></li>
-	    	<li><a href="#" id="about-us" title="About Us">Chamber</a></li>
-	    	<li><a href="#" id="service" title="Service">Site Plan</a></li>
+	    	<li><a href="index.html" id="home" title="Home">Home</a></li>
+	    	<li><a href="discover.html" id="about-us" title="About Us">Discover</a></li>
+	    	<li><a href="directory.html" id="service" title="Service">Directory</a></li>
 	    	<li><a href="#" id="history" title="History">Form</a></li>
 	    </ul>
     </nav>
-    <main class="main-discover">
-        <section class="spotlights">
+    <main class="main-index">
+       
+          <div class="main-container">
+            <div>
+                <h1 class="h2-main">Upcoming Events</h1>
+                <hr>
+                <div class="container-events">
+                    <h3>March 10, 2024</h3>
+                    <p>Annual Dinner</p>
+                </div>
+                
+            </div>
+            <div class="weather-container">
+                <div class="weather-box">
+                  <h2 class="weather-heading">Weather</h2>
+                  <p class="temperature">25°C</p>
+                  <p class="conditions">Partly Cloudy</p>
+                </div>
+            </div>
+          </div>
+          <section class="spotlights">
             <div class="spotlight">
               <img src="images/McDonalds-logo.webp" alt="Company 1">
               <h3>Mc Donalds</h3>
@@ -57,25 +78,7 @@
               <p>Description of Company 3...</p>
               <a href="#">Learn More</a>
             </div>
-          </section>
-          <div class="main-container">
-            <div>
-                <h1 class="h2-main">Upcoming Events</h1>
-
-                <div class="container-events">
-                    <h3>March 10, 2024</h3>
-                    <p>Annual Dinner</p>
-                </div>
-                
-            </div>
-            <div class="weather-container">
-                <div class="weather-box">
-                  <h2 class="weather-heading">Weather</h2>
-                  <p class="temperature">25°C</p>
-                  <p class="conditions">Partly Cloudy</p>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
         <p>&copy; <span id="currentYear"></span> Walter Stamm  Buenos Aires, Argentina </p>
