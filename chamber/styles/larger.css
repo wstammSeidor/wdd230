@@ -132,8 +132,12 @@ nav .active {
 
 .weather-container{
   grid-area: 2 / 2 / 3 / 3;
-
 }
+
+
+
+
+
 
 .spotlights {
   display: flex;
@@ -178,11 +182,9 @@ nav .active {
 
 
 .h2-main{
-  grid-area: 1 / 1 / 2 / 2;
-  
+  grid-area: 1 / 1 / 2 / 3;
+
 }
-
-
 
 
 
