@@ -60,10 +60,7 @@ try {
         messageElement.textContent = message;
         messageFooter.appendChild(messageElement);
     }
-    
 
-     const  currentTimestamp = new Date().toISOString();
-     document.getElementById("timestamp").value = currentTimestamp;
 
 
 

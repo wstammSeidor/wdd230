@@ -9,7 +9,6 @@ async function apiFetch() {
     const response = await fetch(`${url}?lat=-34.72&lon=-58.51&units=imperial&appid=51f5f50ac3e1ccb583ec0b54ef002e56`);
     if (response.ok) {
       const data = await response.json();
-    //   console.log(data); 
       displayResults(data);
     } else {
       throw new Error(await response.text());
