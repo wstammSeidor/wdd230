@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const today = new Date().getDay();
     // to test banner in prd
-    if (today >= 1 && today <= 5) {
+    if (today >= 1 && today <= 3) {
         banner.classList.remove("hide");
     }
 
