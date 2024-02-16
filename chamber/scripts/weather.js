@@ -13,7 +13,6 @@ async function getWeather() {
 
         const forecastResponse = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=Buenos+Aires&appid=51f5f50ac3e1ccb583ec0b54ef002e56&units=metric');
         const forecastData = await forecastResponse.json();
-        // console.log(forecastData)
         const forecastItems = forecastData.list.filter(item => item.dt_txt.includes('12:00:00')).slice(0, 3);
 
         const forecastElement = document.getElementById('forecast');
