@@ -21,21 +21,25 @@
 </head>
 <body>
   <header>
+   
     <img src="images/chamber-logo.webp" alt="chamber logo">
       <button  onclick="window.location.href='join.html'">
         Join Now
       </button>
   </header>
+  <div id="banner" class="hide">
+    <p>Don't miss our Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+    <button id="closeBtn">Close</button>
+  </div>
   <nav>
       <button id="menu" ></button>
     <ul class="navigation">
       <li><a href="index.html" id="home" title="Home">Home</a></li>
       <li><a href="discover.html" id="about-us" title="About Us">Discover</a></li>
       <li><a href="directory.html" id="service" title="Service">Directory</a></li>
-      <li><a href="#" id="history" title="History">Form</a></li>
     </ul>
   </nav>
-    <main >
+    <main class="main-directory">
       <div class="menu-directory">
         <button id="grid">⏹️Grid</button>
         <button id="list">📄List</button>
@@ -50,6 +54,8 @@
       <p>&copy; <span id="currentYear"></span> Walter Stamm  Buenos Aires, Argentina </p>
       <p  id="lastModified"></p>
   </footer>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/directory.js"></script>  
+    <script src="scripts/banner.js" ></script>
+
 </body>
 </html>

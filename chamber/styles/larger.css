@@ -421,6 +421,10 @@ input[type="submit"]:hover {
 
 /* ---------------------------------------------------------- Styles for directory.html------------------------------------------ */
 
+
+.main-directory {
+  grid-area: main;
+}
 .directory-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -449,6 +453,7 @@ input[type="submit"]:hover {
 
 
 .menu-directory {
+
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
