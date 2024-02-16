@@ -14,7 +14,7 @@ gridbutton.addEventListener("click", () => {
 	cards.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
 	cards.classList.add("list");
