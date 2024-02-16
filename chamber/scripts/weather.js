@@ -9,7 +9,7 @@ async function getWeather() {
 
         document.getElementById('current-temperature').textContent = 'Current Temperature: ' + currentTemperature + '°C';
         document.getElementById('current-conditions').textContent = 'Current Conditions: ' + currentConditions;
-        document.getElementById('weather-icon').src = `http://openweathermap.org/img/wn/${weatherIcon}.png`;
+        document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${weatherIcon}.png`;
 
         const forecastResponse = await fetch('https://api.openweathermap.org/data/2.5/forecast?q=Buenos+Aires&appid=51f5f50ac3e1ccb583ec0b54ef002e56&units=metric');
         const forecastData = await forecastResponse.json();
